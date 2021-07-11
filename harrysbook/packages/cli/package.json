@@ -12,5 +12,8 @@
   "dependencies": {
     "commander": "^8.0.0",
     "local-api": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
   }
 }
