@@ -8,4 +8,3 @@ Just go here to [NPM](https://www.npmjs.com/package/harrysbook) and read more ab
 2. run ```npx harrysbook serve```
 3. then, follow the link to your new instance of Harry's Book!
 
-
