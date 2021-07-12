@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { axios } from "axios";
+import axios from "axios";
 import { ActionType } from "../action-types";
 import { 
 		Action, 
@@ -90,20 +90,21 @@ export const fetchCells = () => {
 		}
 	};
 };
-
 export const saveCells = () => {
-	return async (dispatch: Dispatch<Action>, getState: () => RootState) => {
-		const { cells: { data, order } } = getState();
+  return async (dispatch: Dispatch<Action>, getState: () => RootState) => {
+    const {
+      cells: { data, order },
+    } = getState();
 
-		const cells = order.map(id => data[id]);
+    const cells = order.map((id) => data[id]);
 
-		try {
-			await axios.post("./cells", { cells });
-		} catch (err) {
-			dispatch({
-				ActionType.SAVE_CELLS_ERROR,
-				payload: err.message,
-			})
-		}
-	}
-}
+    try {
+      await axios.post('/cells', { cells });
+    } catch (err) {
+      dispatch({
+        type: ActionType.SAVE_CELLS_ERROR,
+        payload: err.message,
+      });
+    }
+  };
+};
