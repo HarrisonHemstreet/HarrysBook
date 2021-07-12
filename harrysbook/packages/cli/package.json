@@ -1,6 +1,6 @@
 {
   "name": "harrysbook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -17,10 +17,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@harrysbook/local-client": "^1.0.0"
+    "@harrysbook/local-client": "^1.0.1"
   },
   "devDependencies": {
-    "@harrysbook/local-api": "^1.0.0",
+    "@harrysbook/local-api": "^1.0.1",
     "@types/node": "^16.3.1",
     "commander": "^8.0.0",
     "esbuild": "0.8.26",
